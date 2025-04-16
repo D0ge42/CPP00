@@ -1,0 +1,53 @@
+[
+ {
+  "directory": "/home/doge/CPP00/ex01",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-Iincludes",
+   "-g",
+   "-c",
+   "srcs/Phonebook.cpp",
+   "-o",
+   "objs/Phonebook.o"
+  ],
+  "file": "srcs/Phonebook.cpp"
+ },
+ {
+  "directory": "/home/doge/CPP00/ex01",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-Iincludes",
+   "-g",
+   "-c",
+   "srcs/Contacts.cpp",
+   "-o",
+   "objs/Contacts.o"
+  ],
+  "file": "srcs/Contacts.cpp"
+ },
+ {
+  "directory": "/home/doge/CPP00/ex01",
+  "arguments": [
+   "g++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-std=c++98",
+   "-Iincludes",
+   "-g",
+   "-c",
+   "srcs/main.cpp",
+   "-o",
+   "objs/main.o"
+  ],
+  "file": "srcs/main.cpp"
+ }
+]
