@@ -33,13 +33,6 @@ int main()
 			std::getline(std::cin,to_search);
 			pb.search_contact(to_search);
 		}
-		else if (opt.compare("SHOW") == 0)
-		{
-			std::cout << "Show option selected 🔍\n";
-			Contact cont = pb.get_contact(2);
-			pb.display_contact(&cont);
-			break;
-		}
 		else if (opt.compare("EXIT") == 0)
 		{
 			std::cout << "Good bye 👋\n";

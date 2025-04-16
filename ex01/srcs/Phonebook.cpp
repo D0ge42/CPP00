@@ -102,7 +102,6 @@ void 	Phonebook::add_or_replace_contact(Phonebook *pb)
 
 void    Phonebook::add_contact(int id)
 {
-	this->_contacts[id].setId(id);
 
 	std::cout << "Enter contact first name" << '\n';
 	std::string first_name = get_line();
@@ -121,7 +120,7 @@ void    Phonebook::add_contact(int id)
 	std::cout << "Enter darkest secret" << '\n';
 	std::string darkest_secret = get_line();
 
-	_contacts[id] =	Contact(first_name,last_name,nickname,phone_number,darkest_secret);
+	_contacts[id] =	Contact(id,first_name,last_name,nickname,phone_number,darkest_secret);
 	this->number_of_contacts++;
 }
 
