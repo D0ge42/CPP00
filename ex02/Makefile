@@ -1,4 +1,4 @@
-NAME = phonebook
+NAME = program
 
 CC = g++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -Iincludes -g
@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98 -Iincludes -g
 SRC_DIR = srcs
 OBJ_DIR = objs
 
-SRC = srcs/Phonebook.cpp srcs/Contacts.cpp srcs/main.cpp
+SRC = srcs/tests.cpp srcs/Account.cpp
 
 OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
