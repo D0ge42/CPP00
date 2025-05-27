@@ -11,7 +11,7 @@
 /*Function used to add or replace a contact.
  * Params: Phonebook instance
  * Check if the number of contacts is greater than 7 (starts with ID 0).
- * If so it will replace the oldest one with a mod %8 on the last added_id. 
+ * If so it will replace the oldest one with a mod %8 on the last added_id.
  * It will then call add_contact with the ID to replace
  * else it will proceed to add the contact with a given ID.*/
 
@@ -40,7 +40,7 @@ void 	Phonebook::add_or_replace_contact(Phonebook *pb)
 	{
 		pb->add_contact(pb->last_added_id);
 	}
-		
+
 }
 
 /*Function to add a contact.
@@ -173,10 +173,10 @@ void 	Phonebook::display_contact(Contact *contact)
 	 	std::cout << std::right << std::setw(10) << contact->get_nickname().substr(0,10) << "|";
 
 	if (contact->get_phone_number().size() > 10)
-		std::cout << std::right << std::setw(9) << contact->get_phone_number().substr(0,9) << '.' << "|";
+		std::cout << std::right << std::setw(9) << contact->get_phone_number().substr(0,9) << '.' << "|" << '\n';
 	else
 	 	std::cout << std::right << std::setw(10) << contact->get_phone_number().substr(0,10) << "|" << '\n';
-	std::cout << std::right << std::setw(10) << "-------------------------------------------------------" << '\n';
+	std::cout << std::right << std::setw(9) << "-------------------------------------------------------" << '\n';
 }
 
 /*Utils functions used to set,and retrieve info*/
